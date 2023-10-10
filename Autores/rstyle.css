@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 5% 1fr 10%;
+    grid-template-areas: "zh" "zm" "zc" "zf";
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+header{
+    grid-area: zh;
+    background-color: aliceblue;
+    grid-area: zh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-bottom: none;
+    
+    
+}
+
+.menu{
+    grid-area: zm;
+    color: black;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    color: black;
+}
+
+
+
+.menu ul li:hover{
+    font-size: 22px;
+    transition: font-size .5s;
+    
+}
+
+.menu ul{
+    display: flex;
+    height: 100%;
+    
+    
+    
+}
+
+.menu ul li{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-left: none;
+    transition: font-size .5s;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    
+}
+
+
+.menu .gr{
+
+    background-color: #D2E0FB;
+    color: black;
+}
+
+.menu .ru{
+
+    background-color: #F9F3CC;
+}
+
+.menu .vel{
+
+    background-color: #D7E5CA;
+}
+
+.menu .go{
+    background-color: #8EACCD;
+}
+
+.cuadros{
+    background-color: #dfcfb6;
+    grid-area: zc;
+    border: solid 1px black;
+    border-bottom: none;
+    border-top: none;
+}
+
+.cuadros .imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.cuadros .imagenes img{
+    margin: 15px;
+    background-color: gray;
+    padding: 20px;
+    width: 300px;
+    transition: width .5s;
+}
+
+.cuadros .imagenes img:hover{
+    width: 320px;
+    transition: width 1s;
+}
+
+
+
+footer{
+    background-color: #F1F0E8;
+    grid-area: zf;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 30px;
+    border: solid 1px black;
+}
